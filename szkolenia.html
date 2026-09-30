@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Szkolenia ze stylizacji paznokci | Matryca Piękna, Katowice</title>
+  <meta name="description" content="Kursy i doszkolenia ze stylizacji paznokci w Katowicach: manicure hybrydowy, żel kwadrat i migdał, zdobienia Mix Media, ręcznie malowany nail art. Małe grupy i certyfikat.">
+  <meta name="theme-color" content="#2b1240">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/webp" href="wembp/logo_czarne_przegladarka.webp" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/webp" href="wembp/logo_biale_przegladarka.webp" media="(prefers-color-scheme: dark)">
+</head>
+<body class="page-inner">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <!-- ========== NAWIGACJA ========== -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav">
+      <a href="index.html" class="brand" aria-label="Matryca Piękna, strona główna">
+        <span class="brand__logo">
+          <img src="wembp/logo2.svg" alt="" class="logo-light" width="58" height="58">
+          <img src="wembp/logo2_czarne.webp" alt="" class="logo-dark" width="58" height="58">
+        </span>
+        <span class="brand__name">Matryca Piękna<small>Salon kosmetyczny, Katowice</small></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Otwórz menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Menu główne">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Start</a></li>
+          <li><a href="index.html#about" class="nav-link">O nas</a></li>
+          <li><a href="index.html#services" class="nav-link">Usługi</a></li>
+          <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="cennik.html" class="nav-link">Cennik</a></li>
+          <li><a href="szkolenia.html" class="nav-link is-active" aria-current="page">Szkolenia</a></li>
+          <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+        </ul>
+        <a href="https://booksy.com/pl-pl/234844_matryca-piekna_salon-kosmetyczny_11597_katowice" target="_blank" rel="noopener" class="btn btn--gold btn--sm nav-cta">Umów wizytę <i class="fa-solid fa-calendar-check" aria-hidden="true"></i></a>
+        <div class="nav-menu__extra">
+          <p class="open-status open-status--menu" data-open-status aria-live="polite">Sprawdzam godziny otwarcia…</p>
+          <p><i class="fa-regular fa-clock" aria-hidden="true"></i>Pon–Pt 8:00–20:00, sob. 8:00–15:00</p>
+          <p><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+48788263969">+48 788 263 969</a></p>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div>
+          <nav class="breadcrumbs" aria-label="Okruszki">
+            <a href="index.html">Start</a><span aria-hidden="true">/</span><span>Szkolenia</span>
+          </nav>
+          <h1>Szkolenia ze stylizacji paznokci</h1>
+          <p>Ucz się od instruktorek, które na co dzień pracują w salonie.</p>
+        </div>
+        <i class="fa-solid fa-graduation-cap page-hero__icon" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <ul class="perks">
+          <li class="perk">
+            <i class="fa-solid fa-users" aria-hidden="true"></i>
+            <div><strong>Kameralne grupy</strong><span>Maksymalnie 5–6 osób na kursie</span></div>
+          </li>
+          <li class="perk">
+            <i class="fa-solid fa-hand-sparkles" aria-hidden="true"></i>
+            <div><strong>Praktyka od pierwszego dnia</strong><span>Pracujesz pod okiem instruktorki</span></div>
+          </li>
+          <li class="perk">
+            <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+            <div><strong>Certyfikat</strong><span>Po ukończeniu każdego kursu</span></div>
+          </li>
+        </ul>
+
+        <div class="course-grid">
+          <!-- Kurs 1 -->
+          <article class="course-card">
+            <div class="course-card__media">
+              <img src="wembp/40.webp" alt="Manicure hybrydowy wykonany na szkoleniu" loading="lazy">
+              <span class="course-card__badge">Najczęściej wybierany</span>
+              <span class="hat-tag">600 zł</span>
+            </div>
+            <div class="course-card__body">
+              <h2>Manicure Professional: hybryda od podstaw</h2>
+              <p>Intensywne szkolenie z manicure hybrydowego. Opanujesz bezpieczne opracowanie skórek, nadbudowę płytki i malowanie kolorem pod same skórki.</p>
+              <ul class="course-meta">
+                <li><i class="fa-regular fa-clock" aria-hidden="true"></i>5 dni, 40 godzin</li>
+                <li><i class="fa-solid fa-users" aria-hidden="true"></i>Grupa do 6 osób</li>
+                <li><i class="fa-solid fa-certificate" aria-hidden="true"></i>Certyfikat ukończenia</li>
+              </ul>
+              <div class="course-card__actions">
+                <a href="https://booksy.com/pl-pl/234844_matryca-piekna_salon-kosmetyczny_11597_katowice" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Zapisz się</a>
+                <a href="mailto:kontakt@matrycapiekna.pl?subject=Pytanie%20o%20szkolenie%3A%20Manicure%20Professional" class="btn btn--outline btn--sm">Zapytaj o termin</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kurs 2 -->
+          <article class="course-card">
+            <div class="course-card__media">
+              <img src="wembp/11.webp" alt="Paznokcie żelowe w kształcie kwadratu" loading="lazy">
+              <span class="hat-tag">600 zł</span>
+            </div>
+            <div class="course-card__body">
+              <h2>Doszkolenie żelowe: kształt kwadrat</h2>
+              <p>Architektura i budowa salonowego kwadratu. Nauczysz się precyzyjnie podkładać szablon, pracować z żelem i szybko piłować według schematu.</p>
+              <ul class="course-meta">
+                <li><i class="fa-regular fa-clock" aria-hidden="true"></i>6 dni, 48 godzin</li>
+                <li><i class="fa-solid fa-users" aria-hidden="true"></i>Grupa do 6 osób</li>
+                <li><i class="fa-solid fa-certificate" aria-hidden="true"></i>Certyfikat ukończenia</li>
+              </ul>
+              <div class="course-card__actions">
+                <a href="https://booksy.com/pl-pl/234844_matryca-piekna_salon-kosmetyczny_11597_katowice" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Zapisz się</a>
+                <a href="mailto:kontakt@matrycapiekna.pl?subject=Pytanie%20o%20szkolenie%3A%20%C5%BBel%20kwadrat" class="btn btn--outline btn--sm">Zapytaj o termin</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kurs 3 -->
+          <article class="course-card">
+            <div class="course-card__media">
+              <img src="wembp/12.webp" alt="Paznokcie żelowe w kształcie migdała" loading="lazy">
+              <span class="hat-tag">600 zł</span>
+            </div>
+            <div class="course-card__body">
+              <h2>Doszkolenie żelowe: kształt migdał</h2>
+              <p>Praktyczny kurs przedłużania w kształcie migdała. Poznasz zasady idealnych proporcji, prawidłowy rozkład materiału i smukłe wykończenie.</p>
+              <ul class="course-meta">
+                <li><i class="fa-regular fa-clock" aria-hidden="true"></i>8 dni, 64 godziny</li>
+                <li><i class="fa-solid fa-users" aria-hidden="true"></i>Grupa do 5 osób</li>
+                <li><i class="fa-solid fa-certificate" aria-hidden="true"></i>Certyfikat ukończenia</li>
+              </ul>
+              <div class="course-card__actions">
+                <a href="https://booksy.com/pl-pl/234844_matryca-piekna_salon-kosmetyczny_11597_katowice" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Zapisz się</a>
+                <a href="mailto:kontakt@matrycapiekna.pl?subject=Pytanie%20o%20szkolenie%3A%20%C5%BBel%20migda%C5%82" class="btn btn--outline btn--sm">Zapytaj o termin</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kurs 4 -->
+          <article class="course-card">
+            <div class="course-card__media">
+              <img src="wembp/16.webp" alt="Zdobienie ombre na paznokciach" loading="lazy">
+              <span class="course-card__badge course-card__badge--new">Nowość</span>
+              <span class="hat-tag">550 zł</span>
+            </div>
+            <div class="course-card__body">
+              <h2>Mix Media: ombre, baby boomer, princess</h2>
+              <p>Warsztaty z najpopularniejszych zdobień salonowych: płynne przejścia tonalne, trwały baby boomer i efektowne wtapianie drobin.</p>
+              <ul class="course-meta">
+                <li><i class="fa-regular fa-clock" aria-hidden="true"></i>4 dni, 32 godziny</li>
+                <li><i class="fa-solid fa-users" aria-hidden="true"></i>Grupa do 6 osób</li>
+                <li><i class="fa-solid fa-certificate" aria-hidden="true"></i>Certyfikat ukończenia</li>
+              </ul>
+              <div class="course-card__actions">
+                <a href="https://booksy.com/pl-pl/234844_matryca-piekna_salon-kosmetyczny_11597_katowice" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Zapisz się</a>
+                <a href="mailto:kontakt@matrycapiekna.pl?subject=Pytanie%20o%20szkolenie%3A%20Mix%20Media" class="btn btn--outline btn--sm">Zapytaj o termin</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kurs 5 -->
+          <article class="course-card">
+            <div class="course-card__media">
+              <img src="wembp/1.webp" alt="Ręcznie malowana bajkowa postać na paznokciu" loading="lazy">
+              <span class="course-card__badge course-card__badge--new">Nowość</span>
+              <span class="hat-tag">600 zł</span>
+            </div>
+            <div class="course-card__body">
+              <h2>Fairy World: postacie z bajek</h2>
+              <p>Zaawansowany, ręcznie malowany nail art. Nauczysz się przenosić proporcje postaci na paznokieć, budować światłocień i malować idealnie cienkie kontury.</p>
+              <ul class="course-meta">
+                <li><i class="fa-regular fa-clock" aria-hidden="true"></i>6 dni, 48 godzin</li>
+                <li><i class="fa-solid fa-users" aria-hidden="true"></i>Grupa do 6 osób</li>
+                <li><i class="fa-solid fa-certificate" aria-hidden="true"></i>Certyfikat ukończenia</li>
+              </ul>
+              <div class="course-card__actions">
+                <a href="https://booksy.com/pl-pl/234844_matryca-piekna_salon-kosmetyczny_11597_katowice" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Zapisz się</a>
+                <a href="mailto:kontakt@matrycapiekna.pl?subject=Pytanie%20o%20szkolenie%3A%20Fairy%20World" class="btn btn--outline btn--sm">Zapytaj o termin</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="cta-banner">
+          <div>
+            <h2>Gotowa na nowe wyzwanie?</h2>
+            <p>Dołącz do grona stylistek, które uczyły się u nas. Napisz lub zadzwoń, a pomożemy wybrać kurs dopasowany do Twojego doświadczenia.</p>
+          </div>
+          <div class="cta-banner__actions">
+            <a href="https://booksy.com/pl-pl/234844_matryca-piekna_salon-kosmetyczny_11597_katowice" target="_blank" rel="noopener" class="btn btn--gold">Zarezerwuj kurs <i class="fa-solid fa-calendar-check" aria-hidden="true"></i></a>
+            <a href="tel:+48788263969" class="btn btn--ghost">Zadzwoń <i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== STOPKA ========== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="wembp/logo2.svg" alt="" width="52" height="52">
+            <span>Matryca Piękna</span>
+          </a>
+          <p>Salon kosmetyczny i akademia stylizacji w sercu Katowic. Dbamy o to, by każda klientka wychodziła od nas promienna.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/natalia_wencel_" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1DC4WH6TpP/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@natalia.wencel96" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://youtube.com/@venaliaacademy" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Na skróty">
+          <h2>Na skróty</h2>
+          <ul>
+            <li><a href="index.html#about">O nas</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="cennik.html">Cennik</a></li>
+            <li><a href="szkolenia.html">Szkolenia</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="kontakt.html#faq">Częste pytania</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Usługi">
+          <h2>Usługi</h2>
+          <ul>
+            <li><a href="cennik.html#manicure">Manicure i pedicure</a></li>
+            <li><a href="cennik.html#lamination">Brwi i rzęsy</a></li>
+            <li><a href="cennik.html#makeup">Makijaż</a></li>
+            <li><a href="cennik.html#kosmetologia">Kosmetologia</a></li>
+            <li><a href="cennik.html#spa">Masaże</a></li>
+            <li><a href="cennik.html#depilation">Depilacja</a></li>
+            <li><a href="cennik.html#piercing">Przekłuwanie uszu</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h2>Kontakt</h2>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i>ul. Bażantów 24/5, 40-645 Katowice</li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+48788263969">+48 788 263 969</a></li>
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:kontakt@matrycapiekna.pl">kontakt@matrycapiekna.pl</a></li>
+            <li><i class="fa-regular fa-clock" aria-hidden="true"></i>Pon–Pt 8:00–20:00<br>Sobota 8:00–15:00<br>Niedziela nieczynne</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span data-year></span> Matryca Piękna. Wszelkie prawa zastrzeżone.</p>
+        <nav class="footer-legal" aria-label="Informacje prawne">
+          <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+          <a href="regulamin.html">Regulamin strony</a>
+          <a href="polityka-cookies.html">Polityka cookies</a>
+          <button type="button" data-cookie-settings>Ustawienia cookies</button>
+        </nav>
+        <p class="footer-credit">Strona stworzona przez <a href="https://www.MayCard.pl" target="_blank" rel="noopener">www.MayCard.pl</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="toTop" class="to-top" aria-label="Wróć na górę strony">
+    <svg viewBox="0 0 50 50" aria-hidden="true"><circle class="to-top__track" cx="25" cy="25" r="22"/><circle class="to-top__progress" cx="25" cy="25" r="22"/></svg>
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

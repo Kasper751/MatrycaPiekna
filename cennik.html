@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cennik | Matryca Piękna, salon kosmetyczny Katowice</title>
+  <meta name="description" content="Cennik Matrycy Piękna w Katowicach: manicure i pedicure, stylizacja paznokci, brwi i rzęsy, makijaż, kosmetologia, masaże, depilacja woskiem, przekłuwanie uszu Blomdahl.">
+  <meta name="theme-color" content="#2b1240">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/webp" href="wembp/logo_czarne_przegladarka.webp" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/webp" href="wembp/logo_biale_przegladarka.webp" media="(prefers-color-scheme: dark)">
+</head>
+<body class="page-inner">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <!-- ========== NAWIGACJA ========== -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav">
+      <a href="index.html" class="brand" aria-label="Matryca Piękna, strona główna">
+        <span class="brand__logo">
+          <img src="wembp/logo2.svg" alt="" class="logo-light" width="58" height="58">
+          <img src="wembp/logo2_czarne.webp" alt="" class="logo-dark" width="58" height="58">
+        </span>
+        <span class="brand__name">Matryca Piękna<small>Salon kosmetyczny, Katowice</small></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Otwórz menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Menu główne">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Start</a></li>
+          <li><a href="index.html#about" class="nav-link">O nas</a></li>
+          <li><a href="index.html#services" class="nav-link">Usługi</a></li>
+          <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="cennik.html" class="nav-link is-active" aria-current="page">Cennik</a></li>
+          <li><a href="szkolenia.html" class="nav-link">Szkolenia</a></li>
+          <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+        </ul>
+        <a href="https://booksy.com/pl-pl/234844_matryca-piekna_salon-kosmetyczny_11597_katowice" target="_blank" rel="noopener" class="btn btn--gold btn--sm nav-cta">Umów wizytę <i class="fa-solid fa-calendar-check" aria-hidden="true"></i></a>
+        <div class="nav-menu__extra">
+          <p class="open-status open-status--menu" data-open-status aria-live="polite">Sprawdzam godziny otwarcia…</p>
+          <p><i class="fa-regular fa-clock" aria-hidden="true"></i>Pon–Pt 8:00–20:00, sob. 8:00–15:00</p>
+          <p><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+48788263969">+48 788 263 969</a></p>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ========== NAGŁÓWEK ========== -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div>
+          <nav class="breadcrumbs" aria-label="Okruszki">
+            <a href="index.html">Start</a><span aria-hidden="true">/</span><span>Cennik</span>
+          </nav>
+          <h1>Cennik usług</h1>
+          <p>Zabiegi z czasem trwania i ceną. Wyszukaj po nazwie lub wybierz kategorię.</p>
+        </div>
+        <i class="fa-solid fa-hourglass-half page-hero__icon" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <!-- ========== PASEK: WYSZUKIWARKA + KATEGORIE ========== -->
+    <div class="price-toolbar">
+      <div class="container price-toolbar__inner">
+        <div class="price-search">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <label for="priceSearch" class="visually-hidden">Szukaj zabiegu</label>
+          <input type="search" id="priceSearch" placeholder="Szukaj zabiegu, np. hybryda" autocomplete="off">
+        </div>
+        <nav class="category-pills" aria-label="Kategorie cennika">
+          <a href="#konsultacja" class="category-pill">Konsultacja</a>
+          <a href="#kosmetologia" class="category-pill">Kosmetologia</a>
+          <a href="#twarz" class="category-pill">Pielęgnacja twarzy</a>
+          <a href="#manicure" class="category-pill">Manicure</a>
+          <a href="#pedicure" class="category-pill">Pedicure</a>
+          <a href="#dodatki" class="category-pill">Zdobienia</a>
+          <a href="#lamination" class="category-pill">Brwi i rzęsy</a>
+          <a href="#rzesy" class="category-pill">Przedłużanie rzęs</a>
+          <a href="#makeup" class="category-pill">Makijaż</a>
+          <a href="#spa" class="category-pill">Masaże</a>
+          <a href="#depilation" class="category-pill">Depilacja</a>
+          <a href="#piercing" class="category-pill">Przekłuwanie uszu</a>
+          <a href="szkolenia.html" class="category-pill category-pill--link"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Szkolenia</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container price-layout" data-pricelist>
+      <p class="notice">
+        <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+        <span>Aktualne terminy, promocje i pakiety sezonowe znajdziesz na naszym <a href="https://booksy.com/pl-pl/234844_matryca-piekna_salon-kosmetyczny_11597_katowice" target="_blank" rel="noopener">profilu Booksy</a>. Tam też zarezerwujesz wizytę.</span>
+      </p>
+
+      <p class="price-results" id="priceResults" aria-live="polite" hidden></p>
+
+      <!-- ── Konsultacja ── -->
+      <section class="price-section" id="konsultacja" aria-labelledby="h-konsultacja">
+        <header class="price-section__head">
+          <span class="price-section__icon"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></span>
+          <div>
+            <h2 class="price-section__title" id="h-konsultacja">Konsultacja kosmetologiczna</h2>
+            <p class="price-section__lead">Dobry początek każdej kuracji</p>
+          </div>
+        </header>
+        <div class="price-section__body">
+          <ul class="price-group">
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Konsultacja kosmetologiczna</p>
+                <p class="price-row__desc">Indywidualna analiza skóry, dobór pielęgnacji domowej i plan zabiegowy dopasowany do potrzeb Twojej cery.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>15 min</span>
+              <span class="price-row__price price-row__price--free">Bezpłatna</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── Kosmetologia (przeniesione z pricelist.html — sprawdź ceny) ── -->
+      <section class="price-section" id="kosmetologia" aria-labelledby="h-kosmetologia">
+        <header class="price-section__head">
+          <span class="price-section__icon"><i class="fa-solid fa-flask" aria-hidden="true"></i></span>
+          <div>
+            <h2 class="price-section__title" id="h-kosmetologia">Kosmetologia</h2>
+            <p class="price-section__lead">Zabiegi specjalistyczne</p>
+          </div>
+        </header>
+        <div class="price-section__body">
+          <ul class="price-group">
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Mezoterapia mikroigłowa + kwasy + Skinretin Xpert</p>
+                <p class="price-row__desc">Intensywna, wieloetapowa kuracja stymulująca odnowę naskórka i produkcję kolagenu.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+              <span class="price-row__price">499 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Skinretin Xpert</p>
+                <p class="price-row__desc">Odmładzający zabieg oparty na zaawansowanym kompleksie stabilnego retinolu.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+              <span class="price-row__price">499 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Peeling chemiczny z indywidualnym beauty planem</p>
+                <p class="price-row__desc">Kwasy dobrane do potrzeb skóry, połączone z autorskim masażem.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+              <span class="price-row__price">400 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Peeling PQ Age Lift</p>
+                <p class="price-row__desc">Ujędrniający i liftingujący zabieg z natychmiastowym efektem rozświetlenia.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+              <span class="price-row__price">399 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Mezoterapia bezigłowa z maską algową</p>
+                <p class="price-row__desc">Bezinwazyjne wprowadzanie składników aktywnych w głąb skóry metodą elektroporacji.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 15 min</span>
+              <span class="price-row__price">260 <small>zł</small></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── Pielęgnacja twarzy (przeniesione z pricelist.html — sprawdź ceny) ── -->
+      <section class="price-section" id="twarz" aria-labelledby="h-twarz">
+        <header class="price-section__head">
+          <span class="price-section__icon"><i class="fa-solid fa-leaf" aria-hidden="true"></i></span>
+          <div>
+            <h2 class="price-section__title" id="h-twarz">Pielęgnacja twarzy, szyi i dekoltu</h2>
+          </div>
+        </header>
+        <div class="price-section__body">
+          <ul class="price-group">
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Maseczka kremowa + peeling podstawowy</p>
+                <p class="price-row__desc">Odświeżająco-odżywczy rytuał dopasowany do bieżących potrzeb cery.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+              <span class="price-row__price">180 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Zabieg tonizująco-oczyszczający</p>
+                <p class="price-row__desc">Oczyszczenie skóry, przywrócenie prawidłowego pH i złagodzenie podrażnień.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 15 min</span>
+              <span class="price-row__price">220 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Maska algowa: twarz, szyja, dekolt</p>
+                <p class="price-row__desc">Kojące wykończenie pielęgnacyjne, idealne po zabiegach.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>45 min</span>
+              <span class="price-row__price">140 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Peeling kawitacyjny z ampułką</p>
+                <p class="price-row__desc">Głębokie oczyszczanie porów falami ultradźwiękowymi i wprowadzenie serum.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>50 min</span>
+              <span class="price-row__price">150 <small>zł</small></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── Manicure ── -->
+      <section class="price-section" id="manicure" aria-labelledby="h-manicure">
+        <header class="price-section__head">
+          <span class="price-section__icon"><i class="fa-solid fa-hand-sparkles" aria-hidden="true"></i></span>
+          <div>
+            <h2 class="price-section__title" id="h-manicure">Manicure i stylizacja paznokci</h2>
+            <p class="price-section__lead">Pielęgnacja, hybryda, żel i przedłużanie</p>
+          </div>
+        </header>
+        <div class="price-section__body">
+          <div class="price-group">
+            <h3 class="price-subhead">Pielęgnacja dłoni</h3>
+            <ul>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Manicure klasyczny</p>
+                  <p class="price-row__desc">Opracowanie paznokci i skórek oraz peeling dłoni. Bez malowania klasycznym lakierem.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>45 min</span>
+                <span class="price-row__price">90 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Manicure japoński</p>
+                  <p class="price-row__desc">Naturalny zabieg regenerujący, który wzmacnia i wygładza płytkę, przywracając jej zdrowy połysk.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>45 min</span>
+                <span class="price-row__price">110 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Manicure męski</p>
+                  <p class="price-row__desc">Opracowanie paznokci i skórek oraz pielęgnacja dłoni dla zadbanego, naturalnego wyglądu.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>45 min</span>
+                <span class="price-row__price">100 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Parafina na dłonie</p>
+                  <p class="price-row__desc">Intensywnie nawilża, odżywia i wygładza skórę dłoni.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+                <span class="price-row__price">70 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Manicure klasyczny z parafiną</p>
+                  <p class="price-row__desc">Estetyczne opracowanie paznokci połączone z regenerującym zabiegiem parafinowym.</p>
+                </div>
+                <span class="price-row__time"></span>
+                <!-- TODO: uzupełnij cenę i czas -->
+                <span class="price-row__price price-row__price--ask">Zapytaj o cenę</span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Laminacja paznokci</p>
+                  <p class="price-row__desc">Wzmacnia naturalną płytkę, wygładza jej powierzchnię i nadaje zdrowy połysk.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40–60 min</span>
+                <span class="price-row__price">120 <small>zł</small></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price-group">
+            <h3 class="price-subhead">Manicure hybrydowy</h3>
+            <ul>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Manicure hybrydowy</p>
+                  <p class="price-row__desc">Trwała stylizacja z intensywnym połyskiem, odporna na uszkodzenia nawet przez kilka tygodni.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 30 min</span>
+                <span class="price-row__price">140 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Manicure hybrydowy z nadbudową</p>
+                  <p class="price-row__desc">Wzmocnienie naturalnej płytki bazą budującą, wyrównanie kształtu i większa trwałość.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 40 min</span>
+                <span class="price-row__price">150 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Manicure hybrydowy u instruktorki</p>
+                  <p class="price-row__desc">Profesjonalna stylizacja hybrydowa wykonywana przez instruktorkę.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+                <span class="price-row__price">155 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Naprawa paznokcia hybrydowego</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>15 min</span>
+                <span class="price-row__price">20 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Ściąganie hybrydy i nałożenie odżywki</p>
+                  <p class="price-row__desc">Bezpieczne usunięcie stylizacji i odżywka wzmacniająca naturalną płytkę.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+                <span class="price-row__price">80 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Ściąganie hybrydy z opracowaniem skórek i odżywką</p>
+                  <p class="price-row__desc">Usunięcie hybrydy, opracowanie skórek i aplikacja odżywki regenerującej.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>45 min</span>
+                <span class="price-row__price">140 <small>zł</small></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price-group">
+            <h3 class="price-subhead">Manicure żelowy</h3>
+            <p class="price-subnote">Długość paznokci: krótkie 1–2, salonowa 3–4, długie 4–7.</p>
+            <ul>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Manicure żelowy na naturalną płytkę</p>
+                  <p class="price-row__desc">Wzmocnienie płytki żelem, estetyczny kształt i perfekcyjny wygląd na wiele tygodni.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>2 h</span>
+                <span class="price-row__price">170 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Korekta paznokci żelowych, krótkie</p>
+                  <p class="price-row__desc">Uzupełnienie i odświeżenie stylizacji, przywrócenie kształtu i trwałości.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1–2 h</span>
+                <span class="price-row__price">155 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Korekta paznokci żelowych, długość salonowa</p>
+                  <p class="price-row__desc">Uzupełnienie i odświeżenie stylizacji, przywrócenie kształtu i trwałości.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>2 h</span>
+                <span class="price-row__price">160 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Korekta paznokci żelowych, długie</p>
+                  <p class="price-row__desc">Uzupełnienie i odświeżenie stylizacji, przywrócenie kształtu i trwałości.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>2 h 40 min</span>
+                <span class="price-row__price">175 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Ściąganie żelu i nałożenie odżywki</p>
+                  <p class="price-row__desc">Bezpieczne usunięcie stylizacji żelowej i odżywka regenerująca płytkę.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40 min</span>
+                <span class="price-row__price">100 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Ściąganie żelu z opracowaniem skórek i odżywką</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+                <span class="price-row__price">150 <small>zł</small></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price-group">
+            <h3 class="price-subhead">Przedłużanie paznokci</h3>
+            <ul>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Przedłużanie paznokci, krótkie</p>
+                  <p class="price-row__desc">Idealna długość i kształt paznokci z trwałym, eleganckim efektem.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1–2 h</span>
+                <span class="price-row__price">230 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Przedłużanie paznokci, długość salonowa</p>
+                  <p class="price-row__desc">Idealna długość i kształt paznokci z trwałym, eleganckim efektem.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>3 h</span>
+                <span class="price-row__price">240 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Przedłużanie paznokci, długie lub obgryzione</p>
+                  <p class="price-row__desc">Idealna długość i kształt paznokci z trwałym, eleganckim efektem.</p>
+                </div>
+                <span class="price-row__time"></span>
+                <!-- TODO: uzupełnij cenę i czas -->
+                <span class="price-row__price price-row__price--ask">Zapytaj o cenę</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price-group">
+            <h3 class="price-subhead">U instruktorki</h3>
+            <ul>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Przedłużanie paznokci do długości salonowej, instruktorka</p>
+                  <p class="price-row__desc">Wymarzony kształt i długość z trwałym, estetycznym wykończeniem.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>2 h 15 min</span>
+                <span class="price-row__price">250 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Przedłużanie paznokci, długie, instruktorka</p>
+                  <p class="price-row__desc">Wymarzony kształt i długość z trwałym, estetycznym wykończeniem.</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>2 h 30 min</span>
+                <span class="price-row__price">280 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Korekta paznokci żelowych, krótkie, instruktorka</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 15 min – 1 h 30 min</span>
+                <span class="price-row__price">170 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Korekta paznokci żelowych, długość salonowa, instruktorka</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 30 min</span>
+                <span class="price-row__price">180 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main">
+                  <p class="price-row__name">Korekta paznokci żelowych, długie, instruktorka</p>
+                </div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>2 h</span>
+                <span class="price-row__price">190 <small>zł</small></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Pedicure ── -->
+      <section class="price-section" id="pedicure" aria-labelledby="h-pedicure">
+        <header class="price-section__head">
+          <span class="price-section__icon"><i class="fa-solid fa-shoe-prints" aria-hidden="true"></i></span>
+          <div>
+            <h2 class="price-section__title" id="h-pedicure">Pedicure i zdrowe stopy</h2>
+          </div>
+        </header>
+        <div class="price-section__body">
+          <ul class="price-group">
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Pełny pedicure klasyczny</p>
+                <p class="price-row__desc">Opracowanie paznokci, skórek i zrogowaciałego naskórka. Przywraca stopom gładkość i komfort.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+              <span class="price-row__price">160 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Pełny pedicure klasyczny dla mężczyzn</p>
+                <p class="price-row__desc">Opracowanie paznokci, skórek i zrogowaciałego naskórka.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+              <span class="price-row__price">170 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Pełny pedicure hybrydowy</p>
+                <p class="price-row__desc">Kompleksowa pielęgnacja stóp połączona z trwałą hybrydą na paznokciach.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 30 min</span>
+              <span class="price-row__price">220 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Hybryda na stopy</p>
+                <p class="price-row__desc">Trwała stylizacja paznokci u stóp z intensywnym kolorem.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+              <span class="price-row__price">140 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Mini pedicure</p>
+                <p class="price-row__desc">Szybkie, podstawowe opracowanie paznokci i skórek.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40 min</span>
+              <span class="price-row__price">90 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Ściąganie hybrydy z paznokci stóp</p>
+                <p class="price-row__desc">Bezpieczne usunięcie hybrydy i odżywka wzmacniająca płytkę.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+              <span class="price-row__price">60 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Ściąganie żelu z paznokci stóp</p>
+                <p class="price-row__desc">Bezpieczne usunięcie stylizacji żelowej z paznokci stóp.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span>
+              <span class="price-row__price">60 <small>zł</small></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── Dodatki ── -->
+      <section class="price-section" id="dodatki" aria-labelledby="h-dodatki">
+        <header class="price-section__head">
+          <span class="price-section__icon"><i class="fa-solid fa-palette" aria-hidden="true"></i></span>
+          <div>
+            <h2 class="price-section__title" id="h-dodatki">Zdobienia i dodatki</h2>
+            <p class="price-section__lead">Doliczane do manicure lub pedicure</p>
+          </div>
+        </header>
+        <div class="price-section__body">
+          <ul class="price-group">
+            <li class="price-row"><div class="price-row__main"><p class="price-row__name">French</p></div><span class="price-row__time"></span><span class="price-row__price price-row__price--addon">+20 <small>zł</small></span></li>
+            <li class="price-row"><div class="price-row__main"><p class="price-row__name">Baby boomer</p></div><span class="price-row__time"></span><span class="price-row__price price-row__price--addon">+20 <small>zł</small></span></li>
+            <li class="price-row"><div class="price-row__main"><p class="price-row__name">Wzory małe</p></div><span class="price-row__time"></span><span class="price-row__price price-row__price--addon">+10 <small>zł</small></span></li>
+            <li class="price-row"><div class="price-row__main"><p class="price-row__name">Wzory średnie</p></div><span class="price-row__time"></span><span class="price-row__price price-row__price--addon">+20 <small>zł</small></span></li>
+            <li class="price-row"><div class="price-row__main"><p class="price-row__name">Wzory trudne</p></div><span class="price-row__time"></span><span class="price-row__price price-row__price--addon">+30 <small>zł</small></span></li>
+            <li class="price-row"><div class="price-row__main"><p class="price-row__name">Podnoszenie paznokci opadających w dół</p></div><span class="price-row__time"></span><span class="price-row__price price-row__price--addon">+25 <small>zł</small></span></li>
+            <li class="price-row"><div class="price-row__main"><p class="price-row__name">Malowanie naturalnych paznokci odżywką</p></div><span class="price-row__time"></span><span class="price-row__price price-row__price--addon">+10 <small>zł</small></span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── Brwi i rzęsy ── -->
+      <section class="price-section" id="lamination" aria-labelledby="h-lamination">
+        <header class="price-section__head">
+          <span class="price-section__icon"><i class="fa-solid fa-eye" aria-hidden="true"></i></span>
+          <div>
+            <h2 class="price-section__title" id="h-lamination">Brwi i rzęsy</h2>
+            <p class="price-section__lead">Laminacja, henna, farbka i regulacja</p>
+          </div>
+        </header>
+        <div class="price-section__body">
+          <div class="price-group">
+            <h3 class="price-subhead">Laminacja</h3>
+            <ul>
+              <li class="price-row">
+                <div class="price-row__main"><p class="price-row__name">Laminacja, botoks i henna rzęs</p></div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+                <span class="price-row__price">150 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main"><p class="price-row__name">Laminacja brwi, botoks i farbowanie</p></div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+                <span class="price-row__price">150 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main"><p class="price-row__name">Laminacja brwi, botoks i farbowanie z depilacją</p></div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+                <span class="price-row__price">175 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main"><p class="price-row__name">Laminacja brwi i rzęs z botoksem i farbowaniem</p></div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+                <span class="price-row__price">280 <small>zł</small></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price-group">
+            <h3 class="price-subhead">Henna, farbka, regulacja</h3>
+            <p class="price-subnote">Klasyczne podkreślenie brwi: kolor i kształt dopasowane do rysów twarzy.</p>
+            <ul>
+              <li class="price-row">
+                <div class="price-row__main"><p class="price-row__name">Henna proszkowa rzęs</p></div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>25 min</span>
+                <span class="price-row__price">50 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main"><p class="price-row__name">Henna proszkowa brwi</p></div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>25 min</span>
+                <span class="price-row__price">50 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main"><p class="price-row__name">Henna proszkowa brwi z regulacją</p></div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>55 min</span>
+                <span class="price-row__price">75 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main"><p class="price-row__name">Henna proszkowa brwi z depilacją woskiem</p></div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>55 min</span>
+                <span class="price-row__price">80 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main"><p class="price-row__name">Henna proszkowa brwi i rzęs</p></div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40 min</span>
+                <span class="price-row__price">100 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main"><p class="price-row__name">Farbka na brwi</p></div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>45 min</span>
+                <span class="price-row__price">70 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main"><p class="price-row__name">Farbka na brwi z regulacją</p></div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 15 min</span>
+                <span class="price-row__price">95 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main"><p class="price-row__name">Farbka na brwi z depilacją woskiem</p></div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 15 min</span>
+                <span class="price-row__price">100 <small>zł</small></span>
+              </li>
+              <li class="price-row">
+                <div class="price-row__main"><p class="price-row__name">Regulacja brwi</p></div>
+                <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>15 min</span>
+                <span class="price-row__price">35 <small>zł</small></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Przedłużanie rzęs ── -->
+      <section class="price-section" id="rzesy" aria-labelledby="h-rzesy">
+        <header class="price-section__head">
+          <span class="price-section__icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></span>
+          <div>
+            <h2 class="price-section__title" id="h-rzesy">Przedłużanie i zagęszczanie rzęs</h2>
+            <p class="price-section__lead">Wyraziste spojrzenie dopasowane do Twojej urody</p>
+          </div>
+        </header>
+        <div class="price-section__body">
+          <ul class="price-group">
+            <li class="price-row">
+              <div class="price-row__main"><p class="price-row__name">Przedłużanie rzęs 1:1</p></div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>2 h</span>
+              <span class="price-row__price">300 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main"><p class="price-row__name">Uzupełnienie rzęs 1:1 (do 4 tygodni)</p></div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>2 h</span>
+              <span class="price-row__price">300 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main"><p class="price-row__name">Przedłużanie rzęs 2–3D</p></div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>2 h</span>
+              <span class="price-row__price">300 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main"><p class="price-row__name">Uzupełnienie rzęs 2–3D (do 4 tygodni)</p></div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>2 h</span>
+              <span class="price-row__price">300 <small>zł</small></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── Makijaż ── -->
+      <section class="price-section" id="makeup" aria-labelledby="h-makeup">
+        <header class="price-section__head">
+          <span class="price-section__icon"><i class="fa-solid fa-paintbrush" aria-hidden="true"></i></span>
+          <div>
+            <h2 class="price-section__title" id="h-makeup">Makijaż</h2>
+          </div>
+        </header>
+        <div class="price-section__body">
+          <ul class="price-group">
+            <li class="price-row">
+              <div class="price-row__main"><p class="price-row__name">Makijaż dzienny</p></div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 15 min</span>
+              <span class="price-row__price">150 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main"><p class="price-row__name">Makijaż wieczorowy</p></div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 15 min</span>
+              <span class="price-row__price">180 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main"><p class="price-row__name">Makijaż próbny</p></div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 30 min</span>
+              <span class="price-row__price">250 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main"><p class="price-row__name">Makijaż ślubny</p></div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 30 min</span>
+              <span class="price-row__price">250 <small>zł</small></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── Masaże ── -->
+      <section class="price-section" id="spa" aria-labelledby="h-spa">
+        <header class="price-section__head">
+          <span class="price-section__icon"><i class="fa-solid fa-spa" aria-hidden="true"></i></span>
+          <div>
+            <h2 class="price-section__title" id="h-spa">Masaże</h2>
+          </div>
+        </header>
+        <div class="price-section__body">
+          <ul class="price-group">
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Masaż twarzy, szyi i dekoltu</p>
+                <p class="price-row__desc">Poprawia ukrwienie i regenerację skóry, rozluźnia napięcia mięśniowe i przywraca cerze promienny wygląd.</p>
+              </div>
+              <span class="price-row__time"></span>
+              <!-- TODO: uzupełnij cenę i czas -->
+              <span class="price-row__price price-row__price--ask">Zapytaj o cenę</span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Masaż dłoni</p>
+                <p class="price-row__desc">Rozluźnia napięcie, poprawia krążenie i odżywia skórę dłoni.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40 min</span>
+              <span class="price-row__price">80 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Masaż stóp</p>
+                <p class="price-row__desc">Zmniejsza napięcie, poprawia krążenie i daje uczucie lekkości.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40 min</span>
+              <span class="price-row__price">100 <small>zł</small></span>
+            </li>
+            <li class="price-row">
+              <div class="price-row__main">
+                <p class="price-row__name">Masaż relaksacyjny pleców</p>
+                <p class="price-row__desc">Rozluźnia napięte mięśnie, zmniejsza zmęczenie i stres.</p>
+              </div>
+              <span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h</span>
+              <span class="price-row__price">130 <small>zł</small></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── Depilacja ── -->
+      <section class="price-section" id="depilation" aria-labelledby="h-depilation">
+        <header class="price-section__head">
+          <span class="price-section__icon"><i class="fa-solid fa-feather" aria-hidden="true"></i></span>
+          <div>
+            <h2 class="price-section__title" id="h-depilation">Depilacja woskiem</h2>
+            <p class="price-section__lead">Paskowa i bezpaskowa. Efekt utrzymuje się zwykle 4–6 tygodni.</p>
+          </div>
+        </header>
+        <div class="price-section__body">
+          <div class="price-group">
+            <h3 class="price-subhead">Twarz</h3>
+            <ul>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Górna warga</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>20 min</span><span class="price-row__price">40 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Brwi</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>15 min</span><span class="price-row__price">40 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Baki</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>20 min</span><span class="price-row__price">45 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Broda</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>20 min</span><span class="price-row__price">45 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Cała twarz</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40 min</span><span class="price-row__price">100 <small>zł</small></span></li>
+            </ul>
+          </div>
+          <div class="price-group">
+            <h3 class="price-subhead">Ciało</h3>
+            <ul>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Pachy</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span><span class="price-row__price">70 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Przedramiona</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>30 min</span><span class="price-row__price">70 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Całe ręce</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>45 min</span><span class="price-row__price">130 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Łydki</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40 min</span><span class="price-row__price">80 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Uda</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40 min</span><span class="price-row__price">90 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Całe nogi</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>1 h 15 min</span><span class="price-row__price">140 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Pośladki</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40 min</span><span class="price-row__price">90 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Tors</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40 min</span><span class="price-row__price">140 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Plecy</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40 min</span><span class="price-row__price">240 <small>zł</small></span></li>
+            </ul>
+          </div>
+          <div class="price-group">
+            <h3 class="price-subhead">Bikini</h3>
+            <ul>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Bikini pachwiny</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40 min</span><span class="price-row__price">160 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Bikini pachwiny, pakiet 4 zabiegi w cenie 3</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>4 × 40 min</span><span class="price-row__price">520 <small>zł</small></span></li>
+              <li class="price-row"><div class="price-row__main"><p class="price-row__name">Bikini francuskie</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>40 min</span><span class="price-row__price">200 <small>zł</small></span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Przekłuwanie uszu ── -->
+      <section class="price-section" id="piercing" aria-labelledby="h-piercing">
+        <header class="price-section__head">
+          <span class="price-section__icon"><i class="fa-solid fa-gem" aria-hidden="true"></i></span>
+          <div>
+            <h2 class="price-section__title" id="h-piercing">Przekłuwanie uszu systemem Blomdahl</h2>
+            <p class="price-section__lead">Medyczny, higieniczny system dla dzieci i dorosłych</p>
+          </div>
+        </header>
+        <div class="price-section__body">
+          <p class="price-subnote" style="margin-top:1rem">Cena zawiera zabieg i kolczyki startowe z wybranego materiału.</p>
+          <ul class="price-group">
+            <li class="price-row"><div class="price-row__main"><p class="price-row__name">Plastik medyczny, pojedyncza cyrkonia Swarovskiego</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>15 min</span><span class="price-row__price">140 <small>zł</small></span></li>
+            <li class="price-row"><div class="price-row__main"><p class="price-row__name">Plastik medyczny, cyrkonie Swarovskiego w kształcie kwiatka</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>15 min</span><span class="price-row__price">150 <small>zł</small></span></li>
+            <li class="price-row"><div class="price-row__main"><p class="price-row__name">Złoty tytan medyczny</p></div><span class="price-row__time"><i class="fa-regular fa-clock" aria-hidden="true"></i>15 min</span><span class="price-row__price">170 <small>zł</small></span></li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="price-empty" id="priceEmpty" hidden>
+        <strong>Nie znaleźliśmy takiego zabiegu</strong>
+        <p>Spróbuj innego słowa, np. „żel”, „brwi” albo „pedicure”, lub <button type="button" id="priceClear" class="btn btn--outline btn--sm" style="margin-top:1rem">wyczyść wyszukiwanie</button></p>
+      </div>
+
+      <div class="fine-print">
+        Ceny podane są w złotych polskich. Czas trwania jest orientacyjny. Zabiegi dopasowujemy indywidualnie, a stałym klientkom oferujemy pakiety rabatowe. Wiążąca jest cena potwierdzona przy rezerwacji.
+      </div>
+
+      <div class="cta-banner">
+        <div>
+          <h2>Wybrałaś zabieg?</h2>
+          <p>Zarezerwuj termin online albo zadzwoń, a pomożemy dobrać usługę do Twoich potrzeb.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="https://booksy.com/pl-pl/234844_matryca-piekna_salon-kosmetyczny_11597_katowice" target="_blank" rel="noopener" class="btn btn--gold">Umów wizytę <i class="fa-solid fa-calendar-check" aria-hidden="true"></i></a>
+          <a href="tel:+48788263969" class="btn btn--ghost">Zadzwoń <i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== STOPKA ========== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="wembp/logo2.svg" alt="" width="52" height="52">
+            <span>Matryca Piękna</span>
+          </a>
+          <p>Salon kosmetyczny i akademia stylizacji w sercu Katowic. Dbamy o to, by każda klientka wychodziła od nas promienna.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/natalia_wencel_" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1DC4WH6TpP/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@natalia.wencel96" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://youtube.com/@venaliaacademy" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Na skróty">
+          <h2>Na skróty</h2>
+          <ul>
+            <li><a href="index.html#about">O nas</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="cennik.html">Cennik</a></li>
+            <li><a href="szkolenia.html">Szkolenia</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="kontakt.html#faq">Częste pytania</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Usługi">
+          <h2>Usługi</h2>
+          <ul>
+            <li><a href="#manicure">Manicure i pedicure</a></li>
+            <li><a href="#lamination">Brwi i rzęsy</a></li>
+            <li><a href="#makeup">Makijaż</a></li>
+            <li><a href="#kosmetologia">Kosmetologia</a></li>
+            <li><a href="#spa">Masaże</a></li>
+            <li><a href="#depilation">Depilacja</a></li>
+            <li><a href="#piercing">Przekłuwanie uszu</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h2>Kontakt</h2>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i>ul. Bażantów 24/5, 40-645 Katowice</li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+48788263969">+48 788 263 969</a></li>
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:kontakt@matrycapiekna.pl">kontakt@matrycapiekna.pl</a></li>
+            <li><i class="fa-regular fa-clock" aria-hidden="true"></i>Pon–Pt 8:00–20:00<br>Sobota 8:00–15:00<br>Niedziela nieczynne</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span data-year></span> Matryca Piękna. Wszelkie prawa zastrzeżone.</p>
+        <nav class="footer-legal" aria-label="Informacje prawne">
+          <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+          <a href="regulamin.html">Regulamin strony</a>
+          <a href="polityka-cookies.html">Polityka cookies</a>
+          <button type="button" data-cookie-settings>Ustawienia cookies</button>
+        </nav>
+        <p class="footer-credit">Strona stworzona przez <a href="https://www.MayCard.pl" target="_blank" rel="noopener">www.MayCard.pl</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="toTop" class="to-top" aria-label="Wróć na górę strony">
+    <svg viewBox="0 0 50 50" aria-hidden="true"><circle class="to-top__track" cx="25" cy="25" r="22"/><circle class="to-top__progress" cx="25" cy="25" r="22"/></svg>
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
