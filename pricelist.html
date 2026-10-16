@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+  <title>Matryca Piękna | Cennik – przekierowanie</title>
+  <link rel="canonical" href="cennik.html" />
+  <meta http-equiv="refresh" content="0; url=cennik.html" />
+  <link rel="icon" type="image/webp" href="wembp/logo_czarne_przegladarka.webp" />
+  <script>
+    /* Stary cennik został połączony z cennik.html.
+       Mapowanie dawnych kotwic na nowe sekcje: */
+    (function () {
+      var map = {
+        'konsultacje':  'konsultacja',
+        'kosmetologia': 'kosmetologia',
+        'twarz':        'twarz',
+        'manicure':     'manicure',
+        'pedicure':     'pedicure',
+        'oprawa-oka':   'lamination',
+        'uszy':         'piercing'
+      };
+      var hash = (location.hash || '').replace('#', '');
+      var target = map[hash] ? '#' + map[hash] : '';
+      location.replace('cennik.html' + target);
+    })();
+  </script>
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center;
+           background: #2b1240; color: #ebd9a6; font: 1rem/1.6 Georgia, serif; text-align: center; }
+    a { color: #bfe8d8; }
+  </style>
+</head>
+<body>
+  <p>Cennik przeniósł się pod nowy adres.<br /><a href="cennik.html">Przejdź do cennika</a></p>
+</body>
+</html>
